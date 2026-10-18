@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How EDITH accesses, uses, shares, retains, and deletes information from its authorized Gmail connection.">
+  <meta name="color-scheme" content="light">
+  <title>Privacy policy — EDITH</title>
+  <link rel="canonical" href="https://jerryolivares9.github.io/privacy.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap"><a class="wordmark" href="./" aria-label="EDITH home">EDITH<span class="brand-dot" aria-hidden="true"></span></a><nav aria-label="Main navigation"><a href="./">About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="mailto:jerryolivares9@gmail.com">Contact <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main" class="document wrap">
+    <p class="eyebrow">Information &amp; control</p>
+    <h1>Privacy policy.</h1>
+    <p class="updated">Effective October 17, 2026</p>
+    <p class="document-lead">EDITH is a personal-use assistant operated by Jerry. This policy describes the authorized Gmail connection and this public information website. EDITH is not offered for public account registration.</p>
+
+    <section aria-labelledby="collection"><h2 id="collection">1. Information EDITH accesses</h2>
+      <p>With the Google account owner’s authorization, EDITH uses the Gmail API to access mailbox identity, message and thread identifiers, headers such as sender, recipients, subject and dates, message bodies, labels, and supported attachments. EDITH also processes the owner’s requests and context needed to answer them.</p>
+      <p>The Gmail connection uses <code>gmail.readonly</code>. It does not permit EDITH to send or modify email. When incoming-mail monitoring is enabled, Google Cloud Pub/Sub carries a mailbox address and change-history reference; EDITH then retrieves the relevant email through the Gmail API. This monitoring feature is currently being tested separately.</p>
+    </section>
+
+    <section aria-labelledby="purpose"><h2 id="purpose">2. How information is used</h2>
+      <p>EDITH uses this information to find messages, summarize email, read supported attachments, answer questions, preserve source references for follow-up requests, and support actions the owner has authorized. Enabled proactive features may evaluate incoming email and prepare notifications or reminder actions.</p>
+      <p>Google user data is used for these personal-assistant features, not sold or used for advertising, profiling for credit decisions, or training general-purpose AI models. EDITH’s use and transfer of Google user data must comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+
+    <section aria-labelledby="processing"><h2 id="processing">3. Local and cloud processing</h2>
+      <p>Some processing runs locally on the owner’s computer, including the local Gemma model used in incoming-email screening tests. Other tasks use OpenAI’s API. Depending on the request, OpenAI may receive relevant message text, metadata, attachment text or rendered attachment images, task context, and tool results to interpret information or generate a response.</p>
+      <p>When notifications are enabled, notification content may pass through Apple’s push-notification service and appear on the owner’s configured devices. Google provides mailbox access and, when enabled, change notifications. These providers process data under their applicable service terms and retention practices. Cloud processing is not a claim that all email data stays on the local computer.</p>
+      <p>EDITH does not publish mailbox data to this website. Routine human review of private email by other people is not part of the feature. Any necessary support access must be authorized by the owner or otherwise permitted by Google’s Limited Use rules.</p>
+    </section>
+
+    <section aria-labelledby="storage"><h2 id="storage">4. Storage and security</h2>
+      <p>OAuth credentials are stored outside the public website and source repository, protected for the Windows user. Mail execution recovery snapshots are also encrypted for that user. EDITH uses HTTPS for Google and OpenAI API connections and binds mailbox access to the authorized profile.</p>
+      <p>Local conversation, task, model-execution and result records can contain selected email content, derived summaries, source references and attachment material. Not every local record has the same encryption or retention policy. These records are distinct from ordinary timing logs. No system can guarantee absolute security.</p>
+    </section>
+
+    <section aria-labelledby="retention"><h2 id="retention">5. Retention and deletion</h2>
+      <p>Temporary recovery snapshots become ineligible after 24 hours and are cleared during subsequent mail use. This is not a 24-hour deletion promise for all email-derived data: conversations, saved results, execution records and reminders may persist until the owner removes them through the relevant controls or requests cleanup.</p>
+      <p>Revoking Google access prevents further authorized Gmail retrieval but does not automatically erase existing local records or data already processed by providers. The owner can request deletion of stored credentials and local email-derived records at the contact address below. Backups, underlying storage and third-party retention can affect when every copy is removed. Deleting EDITH’s local data does not delete the original messages in Gmail.</p>
+    </section>
+
+    <section aria-labelledby="controls"><h2 id="controls">6. Your controls</h2>
+      <p>You can remove EDITH’s authorization in <a href="https://myaccount.google.com/connections">Google Account connections</a>, disable enabled email features, and manage saved records in EDITH. For access, correction, deletion or other privacy questions, contact <a href="mailto:jerryolivares9@gmail.com">jerryolivares9@gmail.com</a>.</p>
+    </section>
+
+    <section aria-labelledby="website"><h2 id="website">7. This public website</h2>
+      <p>This site is a static information site hosted by GitHub Pages. It contains no Gmail sign-in form, mailbox viewer, analytics scripts, advertising, or application cookies. GitHub may collect technical request data, including IP addresses, when serving the site, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      <p>If you contact the operator by email, your address and message will be used to respond and handle your request.</p>
+    </section>
+
+    <section aria-labelledby="changes"><h2 id="changes">8. Changes and contact</h2>
+      <p>This page will be updated when EDITH’s relevant data practices change. The effective date above identifies this version. Operator and support contact: Jerry, <a href="mailto:jerryolivares9@gmail.com">jerryolivares9@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p>EDITH · Personal-use software</p><nav aria-label="Footer"><a href="./">Home</a><a href="terms.html">Terms of use</a></nav></footer>
+</body>
+</html>
